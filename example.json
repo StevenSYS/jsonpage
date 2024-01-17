@@ -1,0 +1,33 @@
+{
+    "css": {
+        "backgroundimage": "Backgrounds/Setup.bmp",
+        "color": "#fff",
+        "linkcolor": "#0ff"
+    },
+    "lineset1": {
+        "image": "Backgrounds/Bubbles.bmp",
+        "line1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "line2": "Duis ornare, ipsum quis molestie molestie.",
+        "line3": "Sit amet scelerisque leo massa sit amet mi.",
+        "line4": "Quisque sed gravida mi, vitae ultrices dolor.",
+        "header1": "3"
+    },
+    "lineset2": {
+        "nobar": true,
+        "line1": "Morbi vel urna sit amet magna finibus laoreet.",
+        "line2": "Dui vel ullamcorper viverra, ac lacinia nulla urna eu erat.",
+        "line3": "Ut mollis felis augue.",
+        "clink3": "https://www.youtube.com/watch?v=6n3pFFPSlW4"
+    },
+    "lineset3": {
+        "image": "Backgrounds/Red Blocks.bmp",
+        "line1": "Duis egestas semper blandit.",
+        "line2": "Donec a odio quis felis elementum commodo.",
+        "line3": "Ut pharetra, ex ut ultricies maximus, quis laoreet felis massa non urna.",
+        "line4": "Pellentesque commodo vitae arcu in pretium.",
+        "line5": "Fusce bibendum sem id odio posuere elementum.",
+        "clink": "https://www.youtube.com/watch?v=0CZ4I4COZEw",
+        "clink4": "https://www.youtube.com/watch?v=umqA5IMx_2I",
+        "header4": "4"
+    }
+}
