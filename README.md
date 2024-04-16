@@ -1,2 +1,2 @@
 # StevenSYS JSONpage
-StevenSYS JSONpage is a easy way of making simple websites using a JSON file.
+Create simple websites using a JSON file.
