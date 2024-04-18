@@ -33,7 +33,9 @@ function readJSON(jsonfile) {
 				} else {
 				$(".linesets").append("<p>" + eval("lineset.line" + li) + "</p>");
 		}}}
-		if (lineset.nobar == false) {$(".linesets").append("<hr>");}
+		if (lineset.nobar != true) {
+			$(".linesets").append("<hr>");
+		}
 	}
 	if (jsonfile.css != undefined) {
 		$("body").css("color", jsonfile.css.color);
@@ -44,5 +46,7 @@ function readJSON(jsonfile) {
 		$("body").css("background-color", jsonfile.css.backgroundcolor);
 		$("body").css("background-image", "url(\"" + jsonfile.css.backgroundimage + "\")");
 	}
-	if (jsonfile.madewith == false) {$(".madewith").remove();}
+	if (jsonfile.madewith == false) {
+		$(".madewith").remove();
+	}
 }
