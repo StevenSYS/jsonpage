@@ -7,8 +7,7 @@ if (URLParams.has("jsonfile")) {
 	$.getJSON(URLParams.get("jsonfile"), function(json) {
 		readJSON(json);
 		sessionStorage.removeItem("jsonfile");
-	})
-} else {
+})} else {
 	if (sessionStorage.getItem("jsonfile") != null) {
 	readJSON(JSON.parse(sessionStorage.getItem("jsonfile")));
 }}
@@ -35,8 +34,7 @@ function readJSON(jsonfile) {
 		}}}
 		if (lineset.nobar != true) {
 			$(".linesets").append("<hr>");
-		}
-	}
+	}}
 	if (jsonfile.css != undefined) {
 		$("body").css("color", jsonfile.css.color);
 		$("a").css("color", jsonfile.css.linkcolor);
@@ -48,5 +46,4 @@ function readJSON(jsonfile) {
 	}
 	if (jsonfile.madewith == false) {
 		$(".madewith").remove();
-	}
-}
+}}

@@ -1,35 +1,35 @@
 {
-    "css": {
-        "color": "#fff",
-        "linkcolor": "#0f0",
-        "fontfamily": "sans-serif",
-        "fontsize": "22px",
-        "textalign": "left",
-        "backgroundcolor": "#000",
-        "backgroundimage": "Backgrounds/Black Thatch.bmp"
-    },
-    "lineset1": {
-        "image": "Backgrounds/Bubbles.bmp",
-        "line1": "This is a example that demonstrates all of the features of",
-        "line2": "StevenSYS JSONpage!"
-    },
-    "lineset2": {
-        "nobar": true,
-        "line1": "This is a header.",
-        "line2": "This is a different sized header.",
-        "line3": "This is a link.",
-        "line4": "This is a header link.",
-        "header1": "3",
-        "header2": "2",
-        "header4": "1",
-        "clink3": "https://www.youtube.com/watch?v=_U_UytUgnDc",
-        "clink4": "https://www.youtube.com/watch?v=xhBk5RI7PF4"
-    },
-    "lineset3": {
-        "nobar": true,
-        "image": "Backgrounds/Red Blocks.bmp",
-        "line1": "^ This image is a link.",
-        "clink": "https://www.youtube.com/watch?v=GbahxwcI11Y"
-    },
-    "madewith": false
+	"css": {
+		"color": "#fff",
+		"linkcolor": "#0f0",
+		"fontfamily": "sans-serif",
+		"fontsize": "22px",
+		"textalign": "left",
+		"backgroundcolor": "#000",
+		"backgroundimage": "Backgrounds/Black Thatch.bmp"
+	},
+	"lineset1": {
+		"image": "Backgrounds/Bubbles.bmp",
+		"line1": "This is a example that demonstrates all of the features of",
+		"line2": "StevenSYS JSONpage!"
+	},
+	"lineset2": {
+		"nobar": true,
+		"line1": "This is a header.",
+		"line2": "This is a different sized header.",
+		"line3": "This is a link.",
+		"line4": "This is a header link.",
+		"header1": "3",
+		"header2": "2",
+		"header4": "1",
+		"clink3": "https://www.youtube.com/watch?v=_U_UytUgnDc",
+		"clink4": "https://www.youtube.com/watch?v=xhBk5RI7PF4"
+	},
+	"lineset3": {
+		"nobar": true,
+		"image": "Backgrounds/Red Blocks.bmp",
+		"line1": "^ This image is a link.",
+		"clink": "https://www.youtube.com/watch?v=GbahxwcI11Y"
+	},
+	"madewith": false
 }
