@@ -1,4 +1,6 @@
 {
+	"title": "Example 2",
+	"icon": "http://www.stevensys.com/Images/favicon.png",
 	"css": {
 		"color": "#fff",
 		"linkcolor": "#0f0",

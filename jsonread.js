@@ -14,6 +14,12 @@ if (URLParams.has("jsonfile")) {
 function readJSON(jsonfile) {
 	for(var i = 1; eval("jsonfile.lineset" + i + " != undefined"); i++) {
 		eval("var lineset = jsonfile.lineset" + i);
+		if (jsonfile.title != undefined) {
+			$("title").replaceWith("<title>" + jsonfile.title + "</title>");
+		}
+		if (jsonfile.icon != undefined) {
+			$("head").append("<link rel=\"icon\" href=\"" + jsonfile.icon + "\">");
+		}
 		if (lineset.image != undefined) {
 			if (lineset.clink != undefined) {
 				$(".linesets").append("<a href=\"" + lineset.clink + "\"><img src=\"" + lineset.image + "\"></img></a>");
@@ -32,7 +38,7 @@ function readJSON(jsonfile) {
 				} else {
 				$(".linesets").append("<p>" + eval("lineset.line" + li) + "</p>");
 		}}}
-		if (lineset.nobar != true) {
+		if (lineset.nobar == false) {
 			$(".linesets").append("<hr>");
 	}}
 	if (jsonfile.css != undefined) {

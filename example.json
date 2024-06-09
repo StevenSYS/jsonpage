@@ -1,4 +1,6 @@
 {
+	"title": "Example",
+	"icon": "http://www.stevensys.com/Images/favicon.png",
 	"css": {
 		"backgroundimage": "Backgrounds/Setup.bmp",
 		"color": "#fff",
