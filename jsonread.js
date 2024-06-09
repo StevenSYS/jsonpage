@@ -25,7 +25,7 @@ function readJSON(jsonfile) {
 			if (eval("lineset.header" + li) != undefined) {
 				$(".linesets").append("<h" + eval("lineset.header" + li) + "><a href=\"" + eval("lineset.clink" + li) + "\">" + eval("lineset.line" + li)+ "</a></h" + eval("lineset.header" + li) + "><p></p>");
 			} else {
-				$(".linesets").append("<a href=\"" + eval("lineset.clink" + li) + "\">" + eval("lineset.line" + li) + "</a><p></p>");
+				$(".linesets").append("<br><a href=\"" + eval("lineset.clink" + li) + "\">" + eval("lineset.line" + li) + "</a><p></p>");
 			}} else {
 				if (eval("lineset.header" + li) != undefined) {
 				$(".linesets").append("<h" + eval("lineset.header" + li) + ">" + eval("lineset.line" + li) + "</h" + eval("lineset.header" + li) + ">");
