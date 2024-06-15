@@ -19,6 +19,9 @@ function readJSON(json) {
 	}
 	for(var i = 1; eval("json.lineset" + i + " != undefined"); i++) {
 		eval("var lineset = json.lineset" + i);
+		for(var k = 1; eval("lineset.html" + k + " != undefined"); k++) {
+			$(".linesets").append(eval("lineset.html" + k));
+		}
 		if (lineset.image != undefined) {
 			if (lineset.cLink != undefined) {
 				$(".linesets").append("<a href=\"" + lineset.cLink + "\"><img src=\"" + lineset.image + "\"></img></a>");
@@ -26,15 +29,21 @@ function readJSON(json) {
 				$(".linesets").append("<img src=\"" + lineset.image + "\"></img><br>");
 		}}
 		for(var j = 1; eval("lineset.line" + j + " != undefined"); j++) {
-		if (eval("lineset.cLink" + j) != undefined) {
-			if (eval("lineset.header" + j) != undefined) {
-				$(".linesets").append("<h" + eval("lineset.header" + j) + "><a href=\"" + eval("lineset.cLink" + j) + "\">" + eval("lineset.line" + j)+ "</a></h" + eval("lineset.header" + j) + "><p></p>");
-			} else {
-				$(".linesets").append("<a href=\"" + eval("lineset.cLink" + j) + "\">" + eval("lineset.line" + j) + "</a><p></p>");
-			}} else if (eval("lineset.header" + j) != undefined) {
-					$(".linesets").append("<h" + eval("lineset.header" + j) + ">" + eval("lineset.line" + j) + "</h" + eval("lineset.header" + j) + ">");
+			if (eval("lineset.cLink" + j) != undefined) {
+				if (eval("lineset.header" + j) != undefined) {
+					$(".linesets").append("<h" + eval("lineset.header" + j) + "><a href=\"" + eval("lineset.cLink" + j) + "\">" + eval("lineset.line" + j)+ "</a></h" + eval("lineset.header" + j) + "><p></p>");
 				} else {
-					$(".linesets").append("<p>" + eval("lineset.line" + j) + "</p>");
+					$(".linesets").append("<a href=\"" + eval("lineset.cLink" + j) + "\">" + eval("lineset.line" + j) + "</a><p></p>");
+				}} else if (eval("lineset.header" + j) != undefined) {
+						$(".linesets").append("<h" + eval("lineset.header" + j) + ">" + eval("lineset.line" + j) + "</h" + eval("lineset.header" + j) + ">");
+					} else {
+						$(".linesets").append("<p>" + eval("lineset.line" + j) + "</p>");
+		}}
+		for(var l = 1; eval("lineset.button" + l + " != undefined"); l++) {
+			if (eval("lineset.bLink" + l) != undefined) {
+				$(".linesets").append("<button onclick=\"location.href='" + eval("lineset.bLink" + l) + "'\" class=\"button\">" + eval("lineset.button" + l) + "</button><br>");
+			} else {
+				$(".linesets").append("<button onclick=\"" + eval("lineset.cBLink" + l) + "\" >" + eval("lineset.button" + l) + "</button><br>");
 		}}
 		if (lineset.noBar != true) {
 			$(".linesets").append("<hr>");
