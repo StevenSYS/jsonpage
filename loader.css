@@ -2,7 +2,6 @@ body {
 	color: #000;
 	font-family: sans-serif;
 	font-size: 20px;
-	text-align: center;
 	/* Credit: Vargr */
 	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
 	image-rendering: -moz-crisp-edges;          /* Firefox                        */

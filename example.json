@@ -4,7 +4,8 @@
 	"css": {
 		"backgroundImage": "Backgrounds/Setup.bmp",
 		"color": "#fff",
-		"linkColor": "#0ff"
+		"linkColor": "#0ff",
+		"textAlign": "center"
 	},
 	"lineset1": {
 		"image": "Backgrounds/Bubbles.bmp",
