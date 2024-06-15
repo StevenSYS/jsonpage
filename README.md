@@ -1,2 +1,2 @@
 # StevenSYS JSONpage
-Create simple websites using a JSON file.
+Create simple(ish) websites using a JSON file.
