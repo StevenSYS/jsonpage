@@ -45,6 +45,7 @@ function readJSON(json) {
 		$("body").css("font-family", json.css.fontFamily);
 		$(".linesets").css("font-size", json.css.fontSize);
 		$("body").css("text-align", json.css.textAlign);
+		$("body").css("line-height", json.css.lineHeight);
 		$("body").css("background-color", json.css.backgroundColor);
 		$("body").css("background-image", "url(\"" + json.css.backgroundImage + "\")");
 	}
