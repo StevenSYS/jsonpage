@@ -3,12 +3,12 @@
 	"icon": "http://www.stevensys.com/Images/favicon.png",
 	"css": {
 		"color": "#fff",
-		"linkcolor": "#0f0",
-		"fontfamily": "sans-serif",
-		"fontsize": "22px",
-		"textalign": "left",
-		"backgroundcolor": "#000",
-		"backgroundimage": "Backgrounds/Black Thatch.bmp"
+		"linkColor": "#0f0",
+		"fontFamily": "sans-serif",
+		"fontSize": "22px",
+		"textAlign": "left",
+		"backgroundColor": "#000",
+		"backgroundImage": "Backgrounds/Black Thatch.bmp"
 	},
 	"lineset1": {
 		"image": "Backgrounds/Bubbles.bmp",
@@ -16,7 +16,7 @@
 		"line2": "StevenSYS JSONpage!"
 	},
 	"lineset2": {
-		"nobar": true,
+		"noBar": true,
 		"line1": "This is a header.",
 		"line2": "This is a different sized header.",
 		"line3": "This is a link.",
@@ -24,14 +24,14 @@
 		"header1": "3",
 		"header2": "2",
 		"header4": "1",
-		"clink3": "https://www.youtube.com/watch?v=_U_UytUgnDc",
-		"clink4": "https://www.youtube.com/watch?v=xhBk5RI7PF4"
+		"cLink3": "https://www.youtube.com/watch?v=_U_UytUgnDc",
+		"cLink4": "https://www.youtube.com/watch?v=xhBk5RI7PF4"
 	},
 	"lineset3": {
-		"nobar": true,
+		"noBar": true,
 		"image": "Backgrounds/Red Blocks.bmp",
 		"line1": "^ This image is a link.",
-		"clink": "https://www.youtube.com/watch?v=GbahxwcI11Y"
+		"cLink": "https://www.youtube.com/watch?v=GbahxwcI11Y"
 	},
-	"madewith": false
+	"madeWith": false
 }

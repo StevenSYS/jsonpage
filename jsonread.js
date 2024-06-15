@@ -7,49 +7,47 @@ if (URLParams.has("jsonfile")) {
 	$.getJSON(URLParams.get("jsonfile"), function(json) {
 		readJSON(json);
 		sessionStorage.removeItem("jsonfile");
-})} else {
-	if (sessionStorage.getItem("jsonfile") != null) {
+})} else if (sessionStorage.getItem("jsonfile") != null) {
 	readJSON(JSON.parse(sessionStorage.getItem("jsonfile")));
-}}
-function readJSON(jsonfile) {
-	for(var i = 1; eval("jsonfile.lineset" + i + " != undefined"); i++) {
-		eval("var lineset = jsonfile.lineset" + i);
-		if (jsonfile.title != undefined) {
-			$("title").replaceWith("<title>" + jsonfile.title + "</title>");
+}
+function readJSON(json) {
+	for(var i = 1; eval("json.lineset" + i + " != undefined"); i++) {
+		eval("var lineset = json.lineset" + i);
+		if (json.title != undefined) {
+			$("title").replaceWith("<title>" + json.title + "</title>");
 		}
-		if (jsonfile.icon != undefined) {
-			$("head").append("<link rel=\"icon\" href=\"" + jsonfile.icon + "\">");
+		if (json.icon != undefined) {
+			$("head").append("<link rel=\"icon\" href=\"" + json.icon + "\">");
 		}
 		if (lineset.image != undefined) {
-			if (lineset.clink != undefined) {
-				$(".linesets").append("<a href=\"" + lineset.clink + "\"><img src=\"" + lineset.image + "\"></img></a>");
+			if (lineset.cLink != undefined) {
+				$(".linesets").append("<a href=\"" + lineset.cLink + "\"><img src=\"" + lineset.image + "\"></img></a>");
 			} else {
 				$(".linesets").append("<img src=\"" + lineset.image + "\"></img><br>");
 		}}
 		for(var j = 1; eval("lineset.line" + j + " != undefined"); j++) {
-		if (eval("lineset.clink" + j) != undefined) {
+		if (eval("lineset.cLink" + j) != undefined) {
 			if (eval("lineset.header" + j) != undefined) {
-				$(".linesets").append("<h" + eval("lineset.header" + j) + "><a href=\"" + eval("lineset.clink" + j) + "\">" + eval("lineset.line" + j)+ "</a></h" + eval("lineset.header" + j) + "><p></p>");
+				$(".linesets").append("<h" + eval("lineset.header" + j) + "><a href=\"" + eval("lineset.cLink" + j) + "\">" + eval("lineset.line" + j)+ "</a></h" + eval("lineset.header" + j) + "><p></p>");
 			} else {
-				$(".linesets").append("<a href=\"" + eval("lineset.clink" + j) + "\">" + eval("lineset.line" + j) + "</a><p></p>");
-			}} else {
-				if (eval("lineset.header" + j) != undefined) {
-				$(".linesets").append("<h" + eval("lineset.header" + j) + ">" + eval("lineset.line" + j) + "</h" + eval("lineset.header" + j) + ">");
+				$(".linesets").append("<a href=\"" + eval("lineset.cLink" + j) + "\">" + eval("lineset.line" + j) + "</a><p></p>");
+			}} else if (eval("lineset.header" + j) != undefined) {
+					$(".linesets").append("<h" + eval("lineset.header" + j) + ">" + eval("lineset.line" + j) + "</h" + eval("lineset.header" + j) + ">");
 				} else {
-				$(".linesets").append("<p>" + eval("lineset.line" + j) + "</p>");
-		}}}
-		if (lineset.nobar == false) {
+					$(".linesets").append("<p>" + eval("lineset.line" + j) + "</p>");
+		}}
+		if (lineset.noBar != true) {
 			$(".linesets").append("<hr>");
 	}}
-	if (jsonfile.css != undefined) {
-		$("body").css("color", jsonfile.css.color);
-		$("a").css("color", jsonfile.css.linkcolor);
-		$("body").css("font-family", jsonfile.css.fontfamily);
-		$(".linesets").css("font-size", jsonfile.css.fontsize);
-		$("body").css("text-align", jsonfile.css.textalign);
-		$("body").css("background-color", jsonfile.css.backgroundcolor);
-		$("body").css("background-image", "url(\"" + jsonfile.css.backgroundimage + "\")");
+	if (json.css != undefined) {
+		$("body").css("color", json.css.color);
+		$("a").css("color", json.css.linkColor);
+		$("body").css("font-family", json.css.fontFamily);
+		$(".linesets").css("font-size", json.css.fontSize);
+		$("body").css("text-align", json.css.textAlign);
+		$("body").css("background-color", json.css.backgroundColor);
+		$("body").css("background-image", "url(\"" + json.css.backgroundImage + "\")");
 	}
-	if (jsonfile.madewith == false) {
-		$(".madewith").remove();
+	if (json.madeWith == false) {
+		$(".madeWith").remove();
 }}
