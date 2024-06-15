@@ -11,14 +11,14 @@ if (URLParams.has("jsonFile")) {
 	readJSON(JSON.parse(sessionStorage.getItem("jsonFile")));
 }
 function readJSON(json) {
+	if (json.title != undefined) {
+		$("title").replaceWith("<title>" + json.title + "</title>");
+	}
+	if (json.icon != undefined) {
+		$("head").append("<link rel=\"icon\" href=\"" + json.icon + "\">");
+	}
 	for(var i = 1; eval("json.lineset" + i + " != undefined"); i++) {
 		eval("var lineset = json.lineset" + i);
-		if (json.title != undefined) {
-			$("title").replaceWith("<title>" + json.title + "</title>");
-		}
-		if (json.icon != undefined) {
-			$("head").append("<link rel=\"icon\" href=\"" + json.icon + "\">");
-		}
 		if (lineset.image != undefined) {
 			if (lineset.cLink != undefined) {
 				$(".linesets").append("<a href=\"" + lineset.cLink + "\"><img src=\"" + lineset.image + "\"></img></a>");
