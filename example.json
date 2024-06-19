@@ -5,7 +5,8 @@
 		"backgroundImage": "Backgrounds/Setup.bmp",
 		"color": "#fff",
 		"linkColor": "#0ff",
-		"textAlign": "center"
+		"textAlign": "center",
+		"scrollBarColor": "#00f #000"
 	},
 	"lineset1": {
 		"image": "Backgrounds/Bubbles.bmp",
