@@ -74,6 +74,10 @@ function readJSON(json) {
 		$("body").css("line-height", json.css.lineHeight);
 		$("body").css("background-color", json.css.backgroundColor);
 		$("body").css("background-image", "url(\"" + json.css.backgroundImage + "\")");
+		$("body").css("overflow", json.css.overflow);
+		$("body").css("overflow-x", json.css.overflowX);
+		$("body").css("overflow-y", json.css.overflowY);
+		$("html").css("scrollbar-color", json.css.scrollBarColor);
 	}
 	if (json.madeWith == false) {
 		$(".madeWith").remove();

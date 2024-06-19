@@ -7,13 +7,15 @@
 		"fontFamily": "sans-serif",
 		"fontSize": "22px",
 		"textAlign": "left",
-		"lineHeight": "10px",
+		"lineHeight": "20px",
 		"backgroundColor": "#000",
-		"backgroundImage": "Backgrounds/Black Thatch.bmp"
+		"backgroundImage": "Backgrounds/Black Thatch.bmp",
+		"overflow": "hidden scroll",
+		"scrollBarColor": "#804080 #402040"
 	},
 	"lineset1": {
 		"image": "Backgrounds/Bubbles.bmp",
-		"line1": "This is a example that demonstrates all of the features of",
+		"line1": "This is a example that demonstrates all the features of",
 		"line2": "StevenSYS JSONpage!"
 	},
 	"lineset2": {
@@ -35,7 +37,7 @@
 		"line1": "^ This image is a link.",
 		"cLink": "https://www.youtube.com/watch?v=GbahxwcI11Y",
 		"button1": "This button opens a link!",
-		"button2": "This button runs a Javascript command!",
+		"button2": "This button runs a JavaScript command!",
 		"bLink1": "https://www.youtube.com/watch?v=K0kvlULMBQ8",
 		"cBLink2": "alert('Hello!');"
 	},
