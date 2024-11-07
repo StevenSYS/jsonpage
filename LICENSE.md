@@ -1,23 +1,23 @@
 # JSONpage
 
-License File: [`LICENSES/LICENSE`](LICENSES/LICENSE)
+License: [`LICENSE`](LICENSE)
 
-License Website: https://www.gnu.org/licenses/lgpl-3.0.en.html
+License Page: https://www.gnu.org/licenses/lgpl-3.0.en.html
 
-# jQuery + jQuery UI
+# jQuery
 
-License File: [`LICENSES/LICENSE-jQuery`](LICENSES/LICENSE-jQuery)
+jQuery GitHub Repo: https://github.com/jquery/jquery
 
-License Website: https://jquery.org/license/
+License: https://jquery.org/license/
 
 # crypto-js
 
-License File: [`LICENSES/LICENSE-crypto-js`](LICENSES/LICENSE-crypto-js)
-
 GitHub Repo: https://github.com/brix/crypto-js
+
+License: https://github.com/brix/crypto-js/blob/develop/LICENSE
 
 # js-sha256
 
-License File: [`LICENSES/LICENSE-js-sha256`](LICENSES/LICENSE-js-sha256)
-
 GitHub Repo: https://github.com/emn178/js-sha256
+
+License: https://github.com/emn178/js-sha256/blob/master/LICENSE.txt
